@@ -1,8 +1,13 @@
-const chunk = `2
-3
-1 2 3
-4
-2 1 3 1`;
+/**
+ * Mohammed Sohail
+ * sohailsameja@gmail.com
+ */
+
+process.stdin.resume();
+process.stdin.setEncoding("utf8");
+
+const fs = require("fs");
+const chunk = fs.readFileSync("/dev/stdin").toString();
 
 function main(input) {
     const inputLines = input.split("\n");
